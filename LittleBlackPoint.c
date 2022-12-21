@@ -42,13 +42,13 @@ int main(){
             _Play("./resources/7.wav", 48000, 2, BIT_);
             k2='\0';
             k1='\0';
-            ch='\0';
+            ch='\0';clear();refresh();
             continue;
         }
         if(ch=='n'&&k1!='j'){
             _Play("./resources/5.wav", 48000, 2, BIT_);
             k2='n';
-            ch='\0';
+            ch='\0';clear();refresh();
             continue;
         }
         switch(ch){
@@ -69,6 +69,7 @@ int main(){
             k1=ch;
             break;
           case 'q':
+            clear();refresh();
             goto end;
             break;
           case 'g':
@@ -80,7 +81,7 @@ int main(){
             k1=ch;
             break;
         }
-        ch='\0';
+        ch='\0';clear();refresh();
         continue;
     }
 end:
