@@ -34,6 +34,8 @@ int main(){
     noecho();
     char k1,k2,ch;
     while(1){
+        clear();
+        refresh();
         ch=getch();
         if(ch=='\0'||ch=='\n') continue;
         if(ch=='m'&&k1=='g'){
