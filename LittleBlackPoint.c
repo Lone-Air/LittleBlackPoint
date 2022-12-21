@@ -51,6 +51,12 @@ int main(){
             ch='\0';clear();refresh();
             continue;
         }
+        if(ch=='t'&&k1=='c'){
+            _Play("./resources/10.wav", 48000, 2, BIT_);
+            k2='t';
+            ch='\0';clear();refresh();
+            continue;
+        }
         switch(ch){
           case 'j':
             _Play("./resources/1.wav", 48000, 2, BIT_);
@@ -74,6 +80,18 @@ int main(){
             break;
           case 'g':
             _Play("./resources/6.wav", 48000, 2, BIT_);
+            k1=ch;
+            break;
+          case 'c':
+            _Play("./resources/9.wav", 48000, 2, BIT_);
+            k1=ch;
+            break;
+          case 'r':
+            _Play("./resources/11.wav", 48000, 2, BIT_);
+            k1=ch;
+            break;
+          case 'l':
+            _Play("./resources/12.wav", 48000, 2, BIT_);
             k1=ch;
             break;
           default:
